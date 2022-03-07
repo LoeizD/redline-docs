@@ -25,11 +25,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("/redline-docs/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/redline-docs/resources/css/retype.css?v=1.11.2.699958096679" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/redline-docs/resources/css/retype.css?v=1.11.2.699972733574" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/redline-docs/resources/js/config.js?v=1.11.2.699958096679" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/redline-docs/resources/js/config.js?v=1.11.2.699972733574" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/redline-docs/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/redline-docs/resources/js/lunr.js?v=1.11.2.699958096679" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/redline-docs/resources/js/lunr.js?v=1.11.2.699972733574" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -200,25 +200,110 @@
         </div>
     </div>
 </div>
+<p>Redline races are solved entirely on-chain over a few blocks, and rendered in real time then streamed on twitch. A race lasts around 3 minutes, and is commented by a live caster. Usually races involve 6 racers.</p>
+<doc-anchor-target id="non-ranked-seasons">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#non-ranked-seasons">#</doc-anchor-trigger>
+        <span>Non-ranked seasons</span>
+    </h2>
+</doc-anchor-target>
+<p>To play Redline, players must:</p>
+<ol>
+<li>obtain a free robot by signing up, or pay for a customized robot (buy or rent)</li>
+<li>sign up for a single race or a competition</li>
+<li>submit their &quot;moves&quot; ahead of the race</li>
+<li>Watch and reap the rewards!</li>
+</ol>
+<doc-anchor-target id="ranked-seasons">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#ranked-seasons">#</doc-anchor-trigger>
+        <span>Ranked seasons</span>
+    </h2>
+</doc-anchor-target>
+<p>Ranked seasons are the official races. They have the biggest prizes. They take place on a set of Tracks all around the world.</p>
+<p>To participate in a ranked season, players must first ceate a House and qualify in lesser races.</p>
+<p>Ranked seasons allow only a certain list of robot parts and moves for racing, to keep the races high quality and fair.</p>
+<doc-anchor-target id="tracks">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tracks">#</doc-anchor-trigger>
+        <span>Tracks</span>
+    </h2>
+</doc-anchor-target>
+<p>The races take place on tracks. All the tracks are based on real-world locations. The tracks will provide real-time weather data from the real world to change the race conditions and change the track conditions.</p>
+<doc-anchor-target id="moves">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#moves">#</doc-anchor-trigger>
+        <span>Moves</span>
+    </h2>
+</doc-anchor-target>
+<p>Moves are pre-cast decisions made before the race. Moves are triggered by distance or block count.</p>
+<doc-anchor-target id="houses">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#houses">#</doc-anchor-trigger>
+        <span>Houses</span>
+    </h2>
+</doc-anchor-target>
+<p>In order to participate in ranked seasons, players must obtain a season token, which grants them access to the ranked races of said season.</p>
+<p>Houses can organize themselves as they want, delegating buying, building and racing to different people or voting systems.</p>
+<p>Houses are independent from Redline.</p>
+<p>Houses can emit and sell official collectibles when participating in a season.</p>
+<doc-anchor-target id="randomness-and-strategy">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#randomness-and-strategy">#</doc-anchor-trigger>
+        <span>Randomness and Strategy</span>
+    </h2>
+</doc-anchor-target>
+<p>Redline is a game of strategy with a dash of randomness. We favor deep thinking over luck.
+The two types of randomness that will affect the races are weather data from real world locations and an decentralized verifiable randomness source.</p>
+<doc-anchor-target id="race-equation">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#race-equation">#</doc-anchor-trigger>
+        <span>Race Equation</span>
+    </h3>
+</doc-anchor-target>
+<p>At regular intervals, the race smart contract determines the position of each contestant on the track. This is computed through what is called the Race Equation.
+The Race Equation also computes if there was any collision between horses, malfunctions, crashes and other rare events.</p>
+<doc-anchor-target id="weather">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#weather">#</doc-anchor-trigger>
+        <span>Weather</span>
+    </h3>
+</doc-anchor-target>
+<p>Weather (temperature and rain) are provided through a decentralized oracle. They are used to give a flavoured randomness to the game, but can be used as part of the strategy by the best players.</p>
+<doc-anchor-target id="building-robots">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#building-robots">#</doc-anchor-trigger>
+        <span>Building robots</span>
+    </h2>
+</doc-anchor-target>
+<p>Robots are made of 8 parts. Each part is an NFT. The first Redline season will feature 295 types of parts, and many more visual customizations. An assembly of 8 parts that form a robot is called a build. Building is done through a web based drag and drop interface.</p>
+<p>Robot parts give access to certain moves and have definite stats that interact with the race equation.</p>
+<p>Robot builds and moves must be submitted at a fixed time before the race, and every setup is public. The first to submit their robots get a bonus in the race, but others are able to adapt their moves</p>
+<doc-anchor-target id="mods">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#mods">#</doc-anchor-trigger>
+        <span>Mods</span>
+    </h2>
+</doc-anchor-target>
+<p>Since the race is computed on-chain, any sort of renderer can be designed. One could imagine a race of swimming mermaids based on the Redline race equation. Or use the solution of the race as a part of a more complex game. Renders are just &quot;data visualization&quot; of what happens on-chain.
+Having our logic on-chain also allows future collaborations with other on-chain games, like NFT interoperability.</p>
 <ul>
-<li><p>a note about on chain allowing new renders, mods, collabs</p>
-</li>
-<li><p>houses, delegation</p>
-</li>
-<li><p>seasons, editions</p>
-</li>
-<li><p>weather, randomness, complexity, strategy, chaos</p>
-</li>
-<li><p>spells</p>
-</li>
-<li><p>race equation</p>
-</li>
+<li>houses, delegation</li>
+<li>seasons, editions</li>
+<li>weather, randomness, complexity, strategy, chaos</li>
+<li>spells</li>
+<li>race equation</li>
 </ul>
 <p>ask labu</p>
 <ul>
-<li>editions</li>
-<li>interface</li>
-<li>game mechanics</li>
+<li><p>editions</p>
+</li>
+<li><p>interface</p>
+</li>
+<li><p>game mechanics</p>
+</li>
+<li><p>a note about on chain allowing new renders, mods, collabs</p>
+</li>
 </ul>
 
 
