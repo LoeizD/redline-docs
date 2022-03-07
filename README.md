@@ -36,12 +36,3 @@ The player journey looks like:
 5. House members: take part in the ranked seasons, as any combination of owner, engineer or pilot
 
 
-## Houses
-
-In order to participate in ranked seasons, players must obtain a season token, which grants them access to the ranked races of said season.
-
-Houses can organize themselves as they want, delegating buying, building and racing to different people or voting systems.
-
-Houses are independent from Redline.
-
-Houses can emit and sell official collectibles when participating in a season.
