@@ -7,7 +7,7 @@ icon: trophy
 
 - houses, delegation
 - seasons, editions
-- weather, randomness, complexity
+- weather, randomness, complexity, strategy, chaos
 - spells
 - race equation
 
