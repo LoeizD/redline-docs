@@ -4,7 +4,7 @@ icon: trophy
 
 # Gameplay
 
-!!!warning Warning
+!!!warning Draft page
 Draft page
 !!!
 

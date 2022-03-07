@@ -2,7 +2,7 @@
 icon: people
 ---
 
-!!!warning Warning
+!!!warning Draft page
 Draft page
 !!!
 

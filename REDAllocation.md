@@ -3,7 +3,7 @@ icon: list-unordered
 ---
 # RED Allocation
 
-!!!warning Warning
+!!!warning Draft page
 Draft page
 !!!
 
@@ -16,3 +16,12 @@ Draft page
 - Gov rewards 2%, 6 years
 - Game rewards 33%, 6 years
 - Community airdrops 2%, 6 years
+
+```mermaid
+pie title RED Allocation
+"Team 20%" : 20
+"Private rounds 16%" : 16
+"Treasury 21%" : 21
+"Liquidity 6% " : 6
+"Rewards 37%" : 37
+```
