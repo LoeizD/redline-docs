@@ -1,3 +1,6 @@
+---
+icon: list-unordered
+---
 # RED Allocation
 
 1 billion RED will be minted and vested at genesis. The tokens will become available over the next 6 years.
