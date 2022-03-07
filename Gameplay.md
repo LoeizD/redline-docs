@@ -3,6 +3,11 @@ icon: trophy
 ---
 
 # Gameplay
+
+!!!warning Warning
+Draft page
+!!!
+
 - a note about on chain allowing new renders, mods, collabs
 
 - houses, delegation

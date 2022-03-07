@@ -2,6 +2,10 @@
 icon: people
 ---
 
+!!!warning Warning
+Draft page
+!!!
+
 Corentin Derbre
 
 Alex Scollay

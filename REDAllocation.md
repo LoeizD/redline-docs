@@ -3,6 +3,10 @@ icon: list-unordered
 ---
 # RED Allocation
 
+!!!warning Warning
+Draft page
+!!!
+
 1 billion RED will be minted and vested at genesis. The tokens will become available over the next 6 years.
 
 - Team and future employees 20%, 3 years linear vesting
