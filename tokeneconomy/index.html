@@ -25,11 +25,12 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("/redline-docs/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/redline-docs/resources/css/retype.css?v=1.11.2.699972733574" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/redline-docs/resources/css/retype.css?v=1.11.2.700052038858" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/redline-docs/resources/js/config.js?v=1.11.2.699972733574" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/redline-docs/resources/js/config.js?v=1.11.2.700052038858" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/redline-docs/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/redline-docs/resources/js/lunr.js?v=1.11.2.699972733574" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/redline-docs/resources/js/lunr.js?v=1.11.2.700052038858" defer></script>
+    <script id="mermaid-js" type="text/javascript" src="/redline-docs/resources/js/mermaid.js?v=1.11.2" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -200,13 +201,43 @@
         </div>
     </div>
 </div>
-<p>Mermaid graph of smart contracts, treasury and token flows</p>
-<ol>
-<li>in game economy</li>
-<li>token distrib and alloc, release scehedule</li>
-<li>ads</li>
-<li>POL or liquidity gameplay</li>
-</ol>
+<div class="overflow-hidden mb-6 py-4 dark:px-5 dark:bg-white rounded-md"><pre class="mermaid w-full">flowchart
+subgraph dao [REDLINE DAO]
+    Governance
+    RaceSmartContract
+    Treasury
+    Liquiditydao[Liquidity owned by the dao]
+    end
+subgraph housedao [HOUSE DAOs]
+    House1
+    House2
+    HouseN
+    end
+subgraph Community
+    Voters
+    Liquidity[Liquidity incentives through gameplay]
+    subgraph Players
+        Spectators
+        Engineers
+        end
+    end
+Betting[Betting, not official]
+AdsAgency
+
+AdsAgency -- pay a fee to show ads --&gt; Treasury
+Engineers -- take part in --&gt; housedao
+housedao -- buy robot parts in ETH, DAI or RED --&gt; Treasury
+housedao -- play the race --&gt; RaceSmartContract
+RaceSmartContract -- rewards for winning --&gt; housedao
+Treasury -- create rewards --&gt; RaceSmartContract
+Community &lt;--&gt; Betting
+Voters &lt;-- rewards for voting --&gt; Governance</pre></div>
+<p>Not shown on this graph are:</p>
+<ul>
+<li>secondary market fees</li>
+<li>non-gameplay NFT collectibles</li>
+</ul>
+<hr />
 <doc-anchor-target id="token-utilities">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#token-utilities">#</doc-anchor-trigger>
@@ -278,6 +309,6 @@
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "TokenEconomy", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+        <script>window.__DOCS__ = { "title": "TokenEconomy", icon: "file", hasPrism: false, hasMermaid: true, hasMath: false }</script>
     </body>
 </html>
