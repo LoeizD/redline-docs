@@ -6,7 +6,7 @@ icon: play
 
 Redline races are solved entirely on-chain over a few blocks, and rendered in real time then streamed on twitch. A race lasts around 3 minutes, and is commented by a live caster. Usually races involve 6 racers.
 
-### Base gameplay
+## Base gameplay
 
 To play Redline, players must:
 1. obtain a free robot by signing up, or pay for a customized robot (buy or rent)
@@ -44,12 +44,6 @@ The rewards will be adjusted over time. Players can earn **RED** by:
 - refering other players
 - playing with friends
 - completing challenges
-
-## Mods
-
-Since the race is computed on-chain, any sort of renderer can be designed. One could imagine a race of swimming mermaids based on the Redline race equation. Or use the solution of the race as a part of a more complex game. Renders are just "data visualization" of what happens on-chain.
-Having our logic on-chain also allows future collaborations with other on-chain games, like NFT interoperability.
-
 
 
 
