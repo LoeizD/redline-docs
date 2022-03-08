@@ -2,16 +2,16 @@
 icon: people
 ---
 
-!!!warning Draft page
-Draft page
-!!!
+[Join us if you think you can help us build Redline!](mailto:corentin@bergamot.digital)
 
-Corentin Derbre
+**Corentin Derbre** - Project Lead
 
-Alex Scollay
+**Alex Scollay** - Art Director
 
-Grace Lim
+**Danatos** - Game and System Designer
 
-Pierre-Alexis Ciavladini
+**Grace Lim** - Marketing and Business Dev
 
-Scott Piriou
+**Pierre-Alexis Ciavladini** - Advisor
+
+**Scott Piriou** - Advisor

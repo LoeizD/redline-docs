@@ -7,5 +7,7 @@ branding:
 links:
 - text: Trailer
   link: https://www.youtube.com/watch?v=3_8jvCF8vMQ
+- text: Contact
+  link: mailto:corentin@bergamot.digital
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
