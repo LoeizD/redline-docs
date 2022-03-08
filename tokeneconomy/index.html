@@ -25,11 +25,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("/redline-docs/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/redline-docs/resources/css/retype.css?v=1.11.2.700074280569" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/redline-docs/resources/css/retype.css?v=1.11.2.700074734115" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/redline-docs/resources/js/config.js?v=1.11.2.700074280569" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/redline-docs/resources/js/config.js?v=1.11.2.700074734115" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/redline-docs/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/redline-docs/resources/js/lunr.js?v=1.11.2.700074280569" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/redline-docs/resources/js/lunr.js?v=1.11.2.700074734115" defer></script>
     <script id="mermaid-js" type="text/javascript" src="/redline-docs/resources/js/mermaid.js?v=1.11.2" defer></script>
 </head>
     <body>
@@ -209,18 +209,18 @@ subgraph housedao [HOUSE DAOs]
     HouseDot[House3...]
     end
 subgraph Community
-    Voters
     subgraph Players
         Spectators
         Engineers
         end
+    Voters
     end
 subgraph Liquidity
-    LPs
+    Pools
     end
 
-dao -- hold liquidity --&gt; Liquidity
-housedao -- hold because of gameplay incentives --&gt; Liquidity
+Liquidity -- earn form holding liquidity --&gt; dao
+housedao -- hold for gameplay incentives --&gt; Liquidity
 Engineers &lt;-- rewards to take part in --&gt; housedao
 housedao == buy robot parts in ETH, DAI or RED ==&gt; Treasury
 housedao == play the race ==&gt; RaceSmartContract
@@ -268,6 +268,13 @@ Voters &lt;-- rewards for voting --&gt; Governance</pre></div>
     </h3>
 </doc-anchor-target>
 <p>Semi-independent betting smart contracts will be deployed, and a small fee might be router to the treasury, decided by Governance.</p>
+<doc-anchor-target id="asset-management">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#asset-management">#</doc-anchor-trigger>
+        <span>Asset management</span>
+    </h3>
+</doc-anchor-target>
+<p>Since we have a strong treasury, &quot;safe&quot; asset management becomes possible on top of our protocol.</p>
 
 
 
