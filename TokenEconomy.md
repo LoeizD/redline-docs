@@ -18,18 +18,18 @@ subgraph housedao [HOUSE DAOs]
     HouseDot[House3...]
     end
 subgraph Community
-    Voters
     subgraph Players
         Spectators
         Engineers
         end
+    Voters
     end
 subgraph Liquidity
-    LPs
+    Pools
     end
 
-dao -- hold liquidity --> Liquidity
-housedao -- hold because of gameplay incentives --> Liquidity
+Liquidity -- earn form holding liquidity --> dao
+housedao -- hold for gameplay incentives --> Liquidity
 Engineers <-- rewards to take part in --> housedao
 housedao == buy robot parts in ETH, DAI or RED ==> Treasury
 housedao == play the race ==> RaceSmartContract
@@ -49,5 +49,7 @@ When parts are traded on secondary markets, Redline takes a royalty on the trade
 These are all the virtual goodies and merch that Redline and the Houses will offer to collect. Royalties also apply.
 ### Betting
 Semi-independent betting smart contracts will be deployed, and a small fee might be router to the treasury, decided by Governance.
+### Asset management
+Since we have a strong treasury, "safe" asset management becomes possible on top of our protocol.
 
 
