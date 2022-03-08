@@ -7,21 +7,21 @@
     <meta name="turbo-cache-control" content="no-cache">
 
     <!-- Primary Meta Tags -->
-    <title>Metaverse</title>
-    <meta name="title" content="Metaverse">
-    <meta name="description" content="We see the metaverse as the connected digital realm. The metaverse isn't a single product or a place, but the total of digital interconnected places..." />
+    <title>Racing</title>
+    <meta name="title" content="Racing">
+    <meta name="description" content="A race lasts between 2 to 3 minutes and involves at least 6 competing robots." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://loeizd.github.io/redline-docs/metaverse/">
-    <meta property="og:title" content="Metaverse">
-    <meta property="og:description" content="We see the metaverse as the connected digital realm. The metaverse isn't a single product or a place, but the total of digital interconnected places...">
+    <meta property="og:url" content="https://loeizd.github.io/redline-docs/gameplay/racing/">
+    <meta property="og:title" content="Racing">
+    <meta property="og:description" content="A race lasts between 2 to 3 minutes and involves at least 6 competing robots.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://loeizd.github.io/redline-docs/metaverse/">
-    <meta property="twitter:title" content="Metaverse">
-    <meta property="twitter:description" content="We see the metaverse as the connected digital realm. The metaverse isn't a single product or a place, but the total of digital interconnected places...">
+    <meta property="twitter:url" content="https://loeizd.github.io/redline-docs/gameplay/racing/">
+    <meta property="twitter:title" content="Racing">
+    <meta property="twitter:description" content="A race lasts between 2 to 3 minutes and involves at least 6 competing robots.">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("/redline-docs/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -183,23 +183,65 @@
                 <div id="docs-sidebar-right-toggle"></div>
                
                 <!-- Page content  -->
-<doc-anchor-target id="metaverse" class="break-words">
+<doc-anchor-target id="racing" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#metaverse">#</doc-anchor-trigger>
-        <span>Metaverse</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#racing">#</doc-anchor-trigger>
+        <span>Racing</span>
     </h1>
 </doc-anchor-target>
-<p>We see the metaverse as the connected digital realm.
-The metaverse isn&#x27;t a single product or a place, but the total of digital interconnected places and services. As such, the Redline logic is solved entirely on-chain, allowing interoperability with other games and services.</p>
-<p>Redline is the story surrounding races. We start by creating the race, but our long term plan is to allow players to have a real connection to the Redline universe, and take part in it for generations. Some things that Redline will be developing once the core race is fair and fun to play:</p>
-<ul>
-<li>create immersive game clients to interact with other people through avatars</li>
-<li>create immersive clients to build robots</li>
-<li>more immersion through ownership and expanding the world to more than racing</li>
-<li>connecting to other on-chain games for interoperability</li>
-<li>encourage the community to govern the Redline project</li>
-<li>encourage the community to mod the game</li>
-</ul>
+<p>A race lasts between 2 to 3 minutes and involves at least 6 competing robots.</p>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+            <h5>Deciding who wins</h5>
+<p>The results of a race are the combination of robot part selection, moves planning, circuits, weather, other robots in the race as well as a small amount of randomness.</p>
+        </div>
+    </div>
+</div>
+<p>Races are scheduled in advance with a specific time and circuit location.
+Houses must submit their robot builds and moves in advance of the races.</p>
+<doc-anchor-target id="randomness-and-strategy">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#randomness-and-strategy">#</doc-anchor-trigger>
+        <span>Randomness and Strategy</span>
+    </h2>
+</doc-anchor-target>
+<p>Redline is a game of strategy with a dash of randomness. We favor deep thinking over luck.
+The two types of randomness that will affect the races are weather data from real world locations and an decentralized verifiable randomness source.</p>
+<doc-anchor-target id="race-equation">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#race-equation">#</doc-anchor-trigger>
+        <span>Race Equation</span>
+    </h3>
+</doc-anchor-target>
+<p>At regular intervals, the race smart contract determines the position of each contestant on the circuit. This is computed through what is called the Race Equation.
+The Race Equation also computes if there was any collision between horses, malfunctions, crashes and other rare events.</p>
+<doc-anchor-target id="weather">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#weather">#</doc-anchor-trigger>
+        <span>Weather</span>
+    </h3>
+</doc-anchor-target>
+<p>Weather (temperature and rain) are provided through a decentralized oracle. They are used to give a flavoured randomness to the game, but can be used as part of the strategy by the best players.</p>
+<doc-anchor-target id="circuits">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#circuits">#</doc-anchor-trigger>
+        <span>Circuits</span>
+    </h2>
+</doc-anchor-target>
+<p>The races take place on circuits. All the circuits are based on real-world locations and use real-world weather. The circuits will provide real-time weather data from the real world to change the race conditions and change the circuit conditions.</p>
+<p>Circuits have stats that influence the robots such as ground type and road angle (up/down and left/right).</p>
+<p>Circuits are between 10 to 25km in length, racing is usually only 1 lap of the circuit.</p>
 
 
 
@@ -211,20 +253,20 @@ The metaverse isn&#x27;t a single product or a place, but the total of digital i
             
 <nav class="flex mt-14">
     <div class="w-1/2">
-        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/redline-docs/governance/">
+        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/redline-docs/gameplay/houses/">
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
             <span>
                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                <span class="block mt-1">Governance</span>
+                <span class="block mt-1">Houses</span>
             </span>
         </a>
     </div>
 
     <div class="w-1/2">
-        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/redline-docs/redallocation/">
+        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/redline-docs/governance/">
             <span>
                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                <span class="block mt-1">RED Allocation</span>
+                <span class="block mt-1">Governance</span>
             </span>
             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
         </a>
@@ -272,6 +314,6 @@ The metaverse isn&#x27;t a single product or a place, but the total of digital i
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Metaverse", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+        <script>window.__DOCS__ = { "title": "Racing", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
     </body>
 </html>
