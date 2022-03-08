@@ -7,6 +7,9 @@ The results of a race are the combination of robot part selection, moves plannin
 Races are scheduled in advance with a specific time and circuit location.
 Houses must submit their robot builds and moves in advance of the races.
 
+## Race announcer
+
+Top league ranked races will be streamed on the Redline website and commented live by an announcer!
 
 ## Randomness and Strategy
 
