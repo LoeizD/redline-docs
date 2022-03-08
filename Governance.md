@@ -1,5 +1,5 @@
 ---
-icon: icon-code-of-conduct
+icon: law
 ---
 
 # Governance

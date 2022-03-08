@@ -16,16 +16,9 @@ The races are free to attend and free to play on a web browser. Some racing robo
 
 - **RED** is an **utility** token spent to buy certain parts and get discounts. **xRED** (staked **RED**) is the **governance token** that grants access to premium tools and votes to modify economic incentives and govern the Redline treasury.
 
+[!ref Learn more about the tokenomics](TokenEconomy.md)
 
-## Play and Earn
-
-Players can earn **RED** by:
-- watching races, rewards in the form of airdrops
-- playing non-ranked, with bonuses for winner
-- playing raked, with bonuses for winner
-- refering other players
-- playing with friends
-- completing daily challenges
+## Player Journey
 
 The player journey looks like:
 
@@ -33,6 +26,8 @@ The player journey looks like:
 2. Earn RED by watching races
 3. Play non ranked games with free robots
 4. Engineer robots with custom pieces
-5. House members: take part in the ranked seasons, as any combination of owner, engineer or pilot
+5. Become a House member: take part in the ranked seasons, as any combination of owner, engineer or pilot
+
+[!ref Learn more about the gameplay](Gameplay.md)
 
 
