@@ -20,6 +20,7 @@ The races are free to attend and free to play on a web browser. Some racing robo
 
 ## Player Journey
 
+All playing is done in a web browser.
 The player journey looks like:
 
 1. Watch races online, no wallet needed

@@ -4,6 +4,8 @@ icon: tools
 
 # Technical
 
+The game runs on any web browser, with a wallet, making it easy to use anywhere. Here are the techonologies we use to power Redline.
+
 ## Starknet
 
 StarkNet is a permissionless, decentralized ZK-Rollup on Ethereum. It increases computation speed, lowers cost, and maintains the same security as mainnet.
