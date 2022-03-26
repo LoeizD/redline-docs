@@ -15,3 +15,5 @@ icon: people
 **Pierre-Alexis Ciavladini** - Advisor
 
 **Scott Piriou** - Advisor
+
+[Redline Treasury Multi-sig (Ethereum)](https://etherscan.io/address/0x4D215410b697BAF299a65eA64e0D3b40CaE5df94)
