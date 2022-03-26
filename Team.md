@@ -2,7 +2,9 @@
 icon: people
 ---
 
+!!! light 
 [Join us if you think you can help us build Redline!](mailto:corentin@bergamot.digital)
+!!!
 
 **Corentin Derbre** - Project Lead
 
