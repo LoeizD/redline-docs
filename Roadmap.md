@@ -11,12 +11,12 @@ Our ability to launch is dependent on [StarkNet's roadmap](https://medium.com/st
 
 ## Q1 2022
 - [x] create a non-random race equation off-chain
-- [ ] landing website and documentation
+- [x] landing website and documentation
 - [x] connect the race equation to the renderer
-- [ ] design 295 NFTs for the first edition
 - [ ] Legal entity incorporation
 
 ## Q2 2022
+- [ ] design 295 NFTs for the first edition
 - [ ] create the RED token ecosystem on-chain
 - [ ] interface to interact with the token ecosystem
 - [ ] create the race equation on-chain
